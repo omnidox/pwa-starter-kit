@@ -9092,7 +9092,7 @@ if("production"!==process.env.NODE_ENV){unexpectedKeyCache={}}var shapeAssertion
    Code distributed by Google as part of the polymer project is also
    subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
    */const UPDATE_PAGE="UPDATE_PAGE",UPDATE_OFFLINE="UPDATE_OFFLINE",UPDATE_DRAWER_STATE="UPDATE_DRAWER_STATE",OPEN_SNACKBAR="OPEN_SNACKBAR",CLOSE_SNACKBAR="CLOSE_SNACKBAR",navigate=path=>dispatch=>{// Extract the page name from path.
-const page="/"===path?"view1":path.slice(1);// Any other info you might want to extract from the path (like page type),
+const page="/pwa-starter-kit/"===path?"view1":path.slice(1);// Any other info you might want to extract from the path (like page type),
 // you can do here
 dispatch(loadPage(page));// Close the drawer - in case the *path* change came from a link in the drawer.
 dispatch(updateDrawerState(!1))},loadPage=page=>dispatch=>{switch(page){case"view1":import("./my-view1.js").then(bundle=>bundle&&bundle.$myView1||{}).then(module=>{// Put code in here that you want to run every time when
